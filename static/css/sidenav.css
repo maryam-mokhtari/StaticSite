@@ -1,0 +1,131 @@
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 2000;
+}
+
+.sidenav a {
+  direction: rtl;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .migration-navbar-nav, .sidenav .search-category {
+  opacity: 0;
+}
+.sidenav a:hover {
+  color: #666;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  font-size: 36px;
+}
+#sidenav-top {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+#sidenav-top div {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.search-open, .search-close, .sidenav-open, .sidenav-close {
+  cursor: pointer;
+}
+.login-sidenav-button {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  width: 6rem;
+  height: 2.2rem;
+  margin: 0 .5rem;
+}
+.login-sidenav-button:hover {
+  background-color: #007ffe;
+  border-color: #007ffe;
+  color: #fff;
+}
+.close-sidenav {
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: -.7rem;
+  color: #aaa;
+  left: 1.5rem;
+}
+.search-sidenav {
+  height: 1.5rem;
+  position: absolute;
+  left: 5rem;
+  top: .4rem;
+  opacity: 0.5;
+}
+.search-group {
+  padding: 1rem;
+  direction: rtl;
+}
+.search-group .close-sidenav {
+  top: .7rem;
+}
+.search-group input {
+  height: 3rem;
+  font-size: .9rem;
+}
+.search-category {
+  padding: 2rem 0;
+}
+.search-category div {
+  padding: 15px;
+}
+.search-category mark {
+  background-color: #a7b5d5;
+  border-radius: 1rem;
+  margin: 0 .2rem;
+  font-size: .8rem;
+  width: 1.7rem;
+  display: inline-block;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  #sidenav-top div {
+    display: flex;
+  }
+}
+@media (max-width: 375px) {
+  #sidenav-top div {
+    padding: 0 .1rem;
+  }
+  .search-group .close-sidenav {
+    top: 1rem;
+    left: 2rem;
+  }
+  .login-sidenav-button {
+    margin: 0 .2rem;
+  }
+  .search-sidenav {
+    left: 3rem;
+    height: 1.2rem;
+  }
+  .close-sidenav {
+    left: 1rem;
+    top: -.5rem;
+    font-size: 2rem;
+  }
+  #sidenav-top div {
+    padding: 0 .1rem;
+  }
+}

@@ -1,0 +1,104 @@
+
+.login-box {
+  box-shadow: 0 0 14px 4px rgba(50, 50, 50, 0.2);
+  border-top: 3px #ff7f00 solid;
+}
+.login-input {
+  font-size: 0.8rem;
+  direction: ltr;
+  text-align: right;
+  padding-right: 2rem;
+}
+.login-input:focus {
+  box-shadow: none;
+  border: 2px solid #1a73e8;
+}
+.login-button, .register-button {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+}
+.login-button {
+  background: #ff7f00;
+  border-color: #ff7f00;
+}
+.register-button {
+  background: #5ea808;
+  border-color: #5ea808;
+}
+.login-button:hover, .register-button:hover {
+  border-color: transparent;
+  color: white;
+}
+.login-button:hover {
+  background-color: orange;
+}
+.register-button:hover {
+  background-color: green;
+}
+.login-bottom-item {
+  text-align: right;
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+.login-top-arrow {
+  border-top: 0;
+  border-left: .5rem solid transparent;
+  border-bottom: .5rem solid #ff7f00;
+  border-right: .5rem solid transparent;
+  width: 0px;
+  position: absolute;
+  top: -10px;
+  right: 50px;
+}
+.login-tab, .register-tab {
+  padding: 0 10px;
+}
+.login-tab-button, .register-tab-button {
+  margin-right: 10px;
+  width: calc(50% - 10px);
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.login-tab-button:hover, .login-tab-button:active, .login-tab-button.active,
+.register-tab-button:hover, .register-tab-button:active, .register-tab-button.active {
+  border: 1px solid navy;
+  background-color: #e9f7fd;
+}
+.login-label {
+  font-size: .8rem;
+  position: absolute;
+  top: .7rem;
+  color: #aaa;
+  font-weight: bold;
+  right: 2rem;
+  transition: all .4s ease-in-out;
+  cursor: text;
+}
+fieldset {
+  position: relative;
+}
+:focus + .login-label {
+  color: #1a73e8;
+  top: -.35rem;
+  right: 1.5rem;
+  background: white;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.placeholder-icon, .eye {
+  height: 15px;
+  opacity: 0.5;
+  position: absolute;
+  top: .7rem;
+}
+.placeholder-icon {
+  right: .7rem;
+}
+.eye {
+  left: .7rem;
+  cursor: pointer;
+}
+#date-box {
+  display: flex;
+}

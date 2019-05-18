@@ -1,0 +1,1032 @@
+@media (max-width: 1400px) {
+  .downer-box {
+    padding-right: 6rem;
+  }
+  .page2-main .col-md-4.col-6 {
+    padding: 0;
+  }
+  .immigration-carousel-next, .immigration-carousel-prev {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .box-news {
+    right: 5rem;
+  }
+  /* .sec-x, .sec {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  } */
+  .migration-nav-item {
+    font-size: 0.85rem;
+  }
+  #visa {
+    margin-top: 7rem;
+  }
+  #canada-box img {
+    height: 4.5rem;
+  }
+  .apartment {
+    height: 17rem;
+  }
+  #carousel-house .owl-prev, #carousel-house .owl-next {
+    top: 7rem;
+  }
+  .canada-box-div {
+    font-size: .9rem;
+    height: 16rem;
+  }
+  .house-carousel {
+    width: 17rem;
+    height: 12rem;
+  }
+  .house-box {
+    width: calc(100% - 17rem);
+    padding: .5rem 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .services-div {
+    background-position-x: -15px;
+  }
+  .downer-box {
+    padding-right: 2rem;
+  }
+  .page2-container {
+    padding-top: 90%;
+  }
+  .page2-content {
+    padding-top: calc(45% - 3.5rem);
+  }
+  .migration-dropdown-menu {
+    padding: 1rem 2.5rem;
+  }
+  .page2-icon {
+    width: 4rem;
+  }
+  .shape {
+    border-width: 3px;
+    width: 25px;
+    height: 25px;
+  }
+  #triangle1 {
+    border-width: 25px;
+  }
+  #triangle2 {
+    border-width: 18px;
+    top: -23px;
+    left: -18px;
+  }
+  .top-left, .top-left-icon {
+    display: none;
+  }
+  .news-text {
+    font-size: 0.9rem;
+    word-spacing: -1px;
+  }
+  .cash {
+    background: url("../img/BG-Cash4.png");
+    background-size: 500px;
+  }
+  .mobile-tel {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    -webkit-transform: scale(2, 1.5);
+    -ms-transform: scale(2, 1.5);
+    transform: scale(2, 1.5);
+    display: none;
+  }
+  .news-input {
+    width: 350px;
+  }
+  .news-button {
+    right: 400px;
+    width: 150px;
+  }
+  .plane-div {
+    background-position-x: 110px;
+  }
+  #half-circle2-div {
+    display: none;
+  }
+  .box-news {
+    right: 4rem;
+  }
+  .sec-x, .sec {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .box-customer {
+    padding: 20px;
+  }
+  .down-item {
+    padding: 1.5rem 3px;
+  }
+  /* V2 */
+  /* #canada-box div {
+    font-size: .9rem;
+  } */
+  #visa {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  #canada-box img {
+    height: 4rem;
+  }
+  .apartment {
+    height: 16rem;
+  }
+  #carousel-house .owl-prev, #carousel-house .owl-next {
+    top: 6.5rem;
+  }
+  .ad {
+    height: 23rem;
+  }
+  .search-box input {
+    font-size: .8rem;
+  }
+  .house-carousel {
+    width: 14rem;
+    height: 11rem;
+  }
+  .house-box {
+    width: calc(100% - 14rem);
+    font-size: .8rem;
+  }
+  .like img {
+    width: 1.2rem;
+  }
+  .stars {
+    padding-top: 5px;
+  }
+  .rent {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .boxes {
+    padding-left: 2rem;
+  }
+  .migration-page {
+    padding: 3rem 0;
+  }
+  .show {
+    transition: 0.5s;
+  }
+  /* .nav-item-image {
+    position: absolute;
+    width: .6rem;
+    top: 1rem;
+    opacity: .5;
+    left: 1rem;
+  } */
+  .cash-button {
+    height: 45px;
+    margin: 1rem;
+  }
+  .downer-box {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .downer-title {
+    padding-right: 32px;
+  }
+  .page2-container {
+    padding-top: 100%;
+  }
+  .page2-content {
+    padding-top: calc(50% - 3.5rem);
+  }
+  .plane-div {
+    background-position-x: 90px;
+  }
+  .toolbar {
+    display: none;
+  }
+  .inner-box-top {
+    padding: 25px 0 0 0;
+  }
+  /* .migration-navbar-collapse {
+    z-index: 1;
+    padding-top: 10px;
+    background: #fff;
+  }
+  .migration-nav-link {
+    padding-right: 1rem !important;
+    height: 3rem;
+    transition: 0.5s;
+  } */
+  .box-customer {
+    padding: 15px;
+  }
+
+  .migration-dropdown-menu {
+    box-shadow: none;
+    border: none;
+    background: #f2f8fe;
+    margin: 0;
+  }
+  .migration-dropdown-menu div div a {
+    height: 40px;
+    padding-top: .5rem;
+  }
+  .hr-menu {
+    margin: 0 15px;
+  }
+  .migration-dropdown-menu .hr-menu {
+    width: 100%;
+  }
+  /*
+  .migration-dropdown-menu div div a::before {
+    content: "\2022";
+    color: orange;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: -15px;
+    position: relative;
+    top: 5px;
+    right: -10px;
+  }
+   .header-link {
+    font-weight: normal;
+    color: #667e8b !important;
+  }
+  .header-link img {
+    display: none;
+  } */
+  .immigration-carousel-next, .immigration-carousel-prev {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .box-news {
+    right: 3rem;
+  }
+  .sec-x, .sec {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .tab-item {
+    width: 14rem;
+  }
+  /* V2 */
+  /* #canada-box div {
+    height: 14rem;
+  }
+  #canada-box img {
+    height: 4rem;
+  }
+  #visa-img {
+    height: 2.5rem !important;
+  } */
+  #visa {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  #explorer .owl-item:last-child {
+    margin-left: 0 !important;
+  }
+  .house-box {
+    width: calc(100% - 20rem);
+  }
+  .house-carousel {
+    width: 20rem;
+    height: 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page2-main {
+    min-height: 70vh;
+  }
+  .page2-main .col-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  .body {
+    background: none;
+  }
+  .boxes {
+    padding: 0 7rem;
+    flex: none;
+    max-width: none;
+  }
+  .tab-link {
+    height: 2.5rem;
+  }
+  .cash-icon {
+    width: 80px;
+  }
+  .down-item {
+    flex-direction: column;
+    padding: 1.5rem 5px;
+    word-spacing: -3px;
+    font-size: 0.85rem;
+  }
+  .down-icon {
+    width: 45px;
+    margin-bottom: .5rem;
+  }
+  .footer-text {
+    width: unset;
+    display: block;
+    margin-right: unset;
+    text-align: center;
+  }
+  .downer-box {
+    padding-right: 1rem;
+  }
+  .plane-div {
+    background-position-x: 55px;
+  }
+  .inner-box-top {
+    padding: 20px 0 0 0;
+  }
+  #phone {
+    left: 11rem;
+  }
+  #user {
+    left: 7rem;
+  }
+  .page2-icon {
+    margin-bottom: 1rem;
+  }
+  .downer-ul {
+    padding-right: 30px;
+  }
+  .downer-title {
+    padding-right: 40px;
+  }
+  .bar-logo, .bar-links {
+    width: 100%;
+  }
+  .news-text {
+    margin-bottom: 30px;
+    top: 0;
+  }
+  .box-news {
+    right: 2rem;
+  }
+  .sec-x, .sec {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .migration-navbar-collapse {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  .news-right {
+    background-image: none;
+    min-height: 200px;
+  }
+  .news-title {
+    text-align: right;
+  }
+  .news-hr {
+    margin-right: 0;
+  }
+  .footer-icon {
+    margin-left: 5px;
+  }
+  .menu-icon {
+    width: 50px;
+  }
+  .mobile-menu {
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+  }
+  .news-input {
+    width: 350px;
+    height: 40px;
+    right: calc(20% - 70px);
+  }
+  .news-button {
+    width: 125px;
+    right: calc(20% + 170px);
+  }
+  .copyright {
+    text-align: center !important;
+  }
+  .copyright2 {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+  .tab-item {
+    width: 9rem;
+  }
+  .page2-content {
+    font-size: 1rem;
+  }
+  .immigration-carousel-next, .immigration-carousel-prev {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .services-div {
+    background-size: 100px auto;
+  }
+  .migration-page {
+    padding: 0;
+    padding-bottom: 3rem !important;
+    position: relative;
+  }
+  .migration-page-bg {
+    display: block;
+    z-index: -10;
+  }
+  .mobile-head {
+    margin-top: -10rem;
+    margin-bottom: 1rem;
+    height: 50vh;
+    width: 160%;
+    display: block;
+  }
+  .top-icon-menu, .top-icon {
+    height: 2.8rem;
+  }
+  #houses-half-circle-div {
+    display: none;
+  }
+  .explorer h1 {
+    font-size: .9rem;
+    margin-right: .5rem;
+  }
+  #visa {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .apartment {
+    height: 15rem;
+  }
+  .sec-carousel {
+    padding-left: 0 !important;
+  }
+  .owl-dots {
+    display: none;
+  }
+  .ad {
+    height: 20rem;
+  }
+  .search-main {
+    background-color: #fff !important;
+  }
+  .search-main #toppage-bar {
+    display: none;
+  }
+  .house-carousel {
+    width: 15rem;
+    height: 10rem;
+  }
+  .house-box {
+    width: calc(100% - 13rem);
+    font-size: .8rem;
+    padding: .5rem 1.5rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #sidenav-leftbox {
+    width: 8rem;
+  }
+  .tab-box {
+    width: 100%;
+    margin: unset;
+  }
+  .mobile-head {
+    margin-top: -5rem;
+    margin-bottom: -1rem;
+    height: 43vh;
+    width: 160%;
+    display: block;
+  }
+  .boxes {
+    padding: 0 1rem;
+  }
+  .page3-title {
+    padding-top: 3rem;
+    margin-top: 2rem;
+  }
+  .news-title {
+    text-align: center;
+  }
+  .news-hr {
+      margin: 5px auto;
+      width: 40px;
+  }
+  .news-text {
+      margin: 0 50px 30px 50px;
+      text-align: center;
+  }
+  .down-item {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.8rem;
+  }
+  #phone {
+    left: 7rem;
+  }
+  #user {
+    left: 4.5rem;
+  }
+  .page2-content {
+    font-size: 0.9rem;
+  }
+  .immigration-carousel-next, .immigration-carousel-prev {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .dotted {
+    display: none;
+  }
+  .body {
+    background-image: none;
+  }
+  .footer-link {
+    padding: 4px;
+  }
+  .box-customer {
+    width: 95%;
+    /* margin: 0 auto; */
+  }
+  .news-input {
+    padding: 0 15px;
+    height: 40px;
+    width: 250px;
+    right: calc(50% - 150px);
+  }
+  .news-button {
+    width: 100px;
+    right: calc(50% + 50px);
+  }
+  .box-top {
+    padding-top: 40%;
+  }
+  .tab-item {
+    width: 6rem;
+  }
+  .top-logo {
+    height: 4rem;
+  }
+  .page2-icon {
+    width: 60px;
+  }
+  .mobile-services {
+    margin-right: -30px;
+  }
+  .page2-right-desktop {
+    display: none;
+  }
+  .page2-right-mobile {
+    width: 100px;
+  }
+  .top-icon-menu, .top-icon {
+    height: 2.3rem;
+    top: 1.75rem;
+  }
+  .cash-box {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .cash-icon {
+    width: 75px;
+  }
+  .page2-main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .box-news {
+    right: 1rem;
+  }
+  .sec-x, .sec {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+  }
+  .migration-navbar-collapse {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .cash-title, .cash-header {
+    padding: 5px;
+    font-size: 1.1em;
+  }
+  .footer-link {
+    display: none;
+  }
+  #footer2 {
+    text-align: center;
+  }
+  .prizes {
+    justify-content: center;
+    display: inline-flex;
+  }
+  .down-icon {
+    width: 40px;
+  }
+  /* V2 */
+  /*******/
+  #search-house-container {
+    width: 100%;
+    height: 25rem;
+    background-color: #fff;
+    margin: 0 !important;
+    border-radius: 0;
+  }
+  #first-page {
+    background-image: unset;
+    flex-direction: column;
+  }
+
+  #mobile-head-pic {
+    display: block;
+    height: 15rem;
+    width: 100%;
+    margin-top: 3rem;
+    background-image: url('../img/v2/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #search-house {
+    padding: 10px 0;
+  }
+  .ad {
+    padding: 3rem 2rem;
+  }
+  #visa {
+    margin-top: 0;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+  .location-button {
+    width: 100%;
+  }
+  .bar-links {
+    padding-top: 0;
+  }
+  .bar-logo {
+    margin-bottom: 0;
+  }
+  .explorer h1 {
+    margin-right: .5rem;
+    font-size: .85rem;
+  }
+  .explorer {
+    width: 100%;
+    flex-direction: column;;
+    height: 9rem;
+  }
+  #explorer {
+    padding-top: 0;
+    /* flex-direction: column; */
+  }
+  .item-pic {
+    width: 100%;
+    height: 6rem;
+  }
+  .canada-box-div {
+    height: 15rem;
+  }
+  #circle1 {
+    left: 0;
+  }
+  #circle2 {
+    right: 0;
+  }
+  #rectangle1 {
+    left: 0;
+    bottom: 0;
+  }
+  #circle3 {
+    top: 0;
+    bottom: 0;
+  }
+  .apartment {
+      height: 13rem;
+  }
+  .apartment div {
+    font-size: .8rem;
+  }
+  #visa-customers {
+    background-size: 165%;
+    background-position-y: 50%;
+    background-position-x: 0;
+  }
+  .visa-customer {
+    height: 30vh;
+  }
+  #plus .house-carousel {
+    width: 10rem;
+    height: 8rem;
+  }
+  #plus .house-box {
+    width: calc(100% - 10rem);
+    font-size: .7rem;
+    padding: .3rem;
+    line-height: 1rem;
+  }
+  #plus .like img {
+    width: 1rem;
+  }
+  #normal1 .search-result-box,
+  #normal2 .search-result-box {
+    flex-direction: column;
+  }
+  #normal1 .house-carousel, #normal2 .house-carousel,
+  #normal1 .house-box, #normal2 .house-box {
+    width: unset;
+  }
+  #normal1 .house-box, #normal2 .house-box {
+    font-size: .9rem;
+    padding: 1rem 1.5rem;
+    line-height: 1.7rem;
+  }
+  #normal1 .house-carousel, #normal2 .house-carousel {
+    height: 16rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .sec1-carousel {
+    padding-left: 0 !important;
+  }
+  .explorer {
+    width: 100%;
+  }
+  #footer-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  #sidenav-leftbox {
+    width: 7rem;
+  }
+  .inner-box-link {
+    font-size: .8rem;
+  }
+  .cash-icon {
+    width: 65px;
+  }
+  /* .downer-box {
+    padding-right: 1rem;
+  } */
+  .top-icon-menu, .top-icon {
+    height: 2rem;
+    top: 1.9rem;
+  }
+  .box-top {
+    font-size: .9rem;
+  }
+  /* V2 */
+  .footer-text {
+    line-height: 1.4rem;
+    margin-top: 0;
+  }
+  #visa {
+    width: 100%;
+  }
+  /* #canada-box img {
+    height: 3rem;
+  } */
+  /* #search-house input {
+    height: 2.5rem;
+  }
+  #search-house label {
+    margin-bottom: .2rem;
+  }
+  #search-house .form-group {
+    margin-bottom: 0.8rem;
+  } */
+  .ad h1 {
+    font-size: 1.5rem;
+  }
+  .ad button {
+    padding: .7rem 1.4rem;
+    font-size: 1rem;
+  }
+  .explorer h1 {
+    margin-right: .5rem;
+  }
+  .canada-box-div {
+    height: 13rem;
+    font-size: .85rem;
+    box-shadow: 0px 2px 5px 0px rgba(50,50,50,0.2);
+  }
+  #canada-box img {
+    margin: 1rem auto;
+  }
+  .top-logo {
+    height: 3.5rem;
+  }
+  .down-item {
+    font-size: 0.75rem;
+  }
+  .showmap-button {
+    padding: .7rem;
+    font-size: .7rem;
+  }
+  .showmap-button img {
+    width: 1rem;
+  }
+  #search-result {
+    padding: 0;
+  }
+  #normal1 .house-carousel, #normal2 .house-carousel {
+    height: 13rem;
+  }
+  /* #normal1 .like img, #normal2 .like img {
+    width: 1.2rem;
+  } */
+  #normal1 .house-box, #normal2 .house-box {
+    /* font-size: .9rem; */
+    padding: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .top-logo-scrolled {
+    height: 2.5rem !important;
+  }
+  #sidenav-leftbox {
+    width: 6.5rem;
+  }
+  .inner-box-link {
+    font-size: .7rem;
+    background-size: 200px;
+  }
+  .cash-icon {
+    width: 60px;
+  }
+  .down-icon {
+    width: 35px;
+  }
+  .copyright-fa {
+    font-size: 0.7rem;
+  }
+  .page2-content {
+    font-size: 0.8rem;
+  }
+  .news-input {
+    font-size: 0.8rem;
+    width: 200px;
+    right: calc(50% - 125px);
+  }
+  .news-button {
+    width: 100px;
+    right: calc(50% + 25px);
+  }
+  .box-top {
+    background-size: 200px;
+    font-size: 0.72rem;
+  }
+  .top-logo {
+    height: 2.5rem;
+  }
+  .top-icon-menu, .top-icon {
+    height: 1.8rem;
+    top: 1.5rem;
+  }
+  .cash {
+    font-size: 0.8rem;
+  }
+  .cash-title {
+    padding: 5px 0;
+    font-size: 0.8rem;
+  }
+
+  .cash-header {
+    font-size: 1rem !important;
+  }
+  .footer-icon {
+    width: 30px;
+  }
+  .cash-button {
+    padding: 7px 40px;
+    height: 40px;
+  }
+  #phone {
+    left: 6rem;
+  }
+  #user {
+    left: 3.7rem;
+  }
+  .mobile-head {
+  }
+  .box-news {
+    right: 8px;
+  }
+  .migration-navbar-collapse {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .inner-box-top {
+    padding: 15px 0 0 0;
+  }
+  .inner-box-top-img {
+    height: 52%;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  #visa h1 {
+    font-size: 1.2rem;
+  }
+  #explorer .owl-stage {
+    width: 500px !important;
+  }
+  .immigration-carousel-next, .immigration-carousel-prev {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .downer-box {
+    padding-right: 0;
+  }
+  .apartment {
+    height: 12rem;
+  }
+  .footer-mobile {
+    display: block;
+  }
+  .apartment h2 {
+    font-size: 1rem;
+  }
+  .canada-box-div {
+    height: 12rem;
+    box-shadow: 0px 2px 3px 0px rgba(50,50,50,0.2);
+  }
+  .mobile-br {
+    display: block;
+  }
+  #plus .house-box {
+    width: calc(100% - 7rem);
+    font-size: .5rem;
+    padding: .3rem;
+    line-height: 1rem;
+  }
+  #plus .house-carousel {
+    width: 7rem;
+    height: 6rem;
+  }
+  #plus .stars {
+    padding-top: 0;
+  }
+  #plus .rent {
+    padding-top: 0;
+  }
+  #plus .star, #plus .starplus {
+    width: 10px !important;
+  }
+  #plus .like img {
+    width: .7rem;
+  }
+  #normal1 .house-box, #normal2 .house-box {
+    font-size: .85rem;
+    word-spacing: -1px;
+  }
+}
+
+@media (max-width: 300px) {
+  .cash-button {
+    padding: 7px 30px;
+  }
+  .down-item {
+    font-size: 0.7rem;
+  }
+  .down-icon {
+    width: 30px;
+  }
+  .top-logo {
+    height: 2.2rem;
+  }
+  .top-logo-scrolled {
+    height: 2rem !important;
+  }
+  .top-icon {
+    display: none;
+  }
+  body {
+    font-size: 0.8rem;
+  }
+  .tab-item {
+    width: 5rem;
+  }
+  .news-text {
+    font-size: 0.8rem;
+  }
+  .box-top {
+    background-size: 100px;
+    font-size: 0.6rem;
+  }
+  #immigration-footer {
+    font-size: 0.75rem;
+  }
+  .apartment {
+    height: 10.5rem;
+  }
+}

@@ -1,0 +1,177 @@
+@font-face {
+  font-family: iransans;
+  src: url("../fonts/iransans.woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: yekan;
+  src: url("../fonts/Yekan.ttf");
+  font-weight: normal;
+}
+/* @font-face {
+  font-family: iransans;
+  src: url("../fonts/iransans-bold.woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: iransans;
+  src: url("../fonts/iransans-black.woff");
+  font-weight: black;
+} */
+/* @font-face {
+  font-family: iransans;
+  src: url("../fonts/iransans-light.woff");
+  font-weight: light;
+}
+@font-face {
+  font-family: iranyekan;
+  src: url("../fonts/iranyekan.woff");
+  font-weight: normal;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  color: #444;
+  font-family: iransans;
+  font-weight: bold;
+}
+main, div, section, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+main {
+  width: 100%;
+  height: 100vh;
+}
+#right-box, #left-box {
+  width: 50%;
+  height: 100vh;
+}
+#logo-box, #text-box {
+  width: 100%;
+  position: relative;
+  height: 40vh;
+}
+#right-box {
+  flex-direction: column;
+}
+#left-box {
+  align-items: center;
+  background: url('../img/round.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#rect {
+  background: #ff7f00;
+  opacity: 0.9;
+  width: 30%;
+  height: 30vh;
+  transform: skew(-30deg);
+}
+a {
+  text-decoration: none;
+  color: #777;
+}
+footer {
+  height: 10vh;
+}
+h1 {
+  font-size: 1.5rem;
+}
+#timer {
+  overflow-x: visible;
+  position: absolute;
+  color: #fff;
+}
+.time {
+  flex-direction: column;
+  margin: 1rem;
+}
+.time h1 {
+  font-size: 5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: yekan;
+}
+.time div {
+}
+#logo {
+  height: 7rem;
+}
+.icon {
+  height: 2rem;
+  margin: 1.5rem;
+  filter: grayscale(100%);
+}
+/* .time, #logo-box, #text-box {
+  justify-content: center;
+  align-items: center;
+} */
+#or {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+#half-circle {
+  position: absolute;
+  left: -150px;
+  top: -150px;
+  z-index: -1;
+  opacity: 0.2;
+  border: 55px solid #2e5077;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+#aeroplane {
+  background-image: url('../img/aeroplane.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top:0;
+  width: 5rem;
+  height: 100%;
+}
+footer section {
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  #half-circle {
+    border-width: 45px;
+  }
+}
+@media (max-width: 992px) {
+  #logo {
+    height: 5rem;
+  }
+  .time h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  #left-box {
+    display: none;
+  }
+  #right-box {
+    width: 100%;
+  }
+  #half-circle {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    font-size: .9rem;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    font-size: .8rem;
+  }
+  #aeroplane {
+    display: none;
+  }
+}

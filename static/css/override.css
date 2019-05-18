@@ -1,0 +1,8 @@
+
+.navbar-toggler {
+  border-color: white !important;
+}
+button.focus, button:focus, input.focus, input:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}

@@ -1,0 +1,133 @@
+.input-toggler {
+  display: none;
+  visibility: hidden;
+}
+.toggle-button {
+  position: relative;
+  cursor: pointer;
+  background-color: #fdfdff;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+.label-toggler {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* top: .5rem; */
+  background: #fff;
+  padding: 1.7rem;
+  color: #444;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px 0 #ddd;
+  border-radius: 5px 5px 1px 1px;
+  margin-bottom: 0;
+  /* margin-top: 1rem; */
+}
+.label-toggler:hover {
+  color: #000;
+}
+/* .label-toggler::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+} */
+.toggler-expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  background-color: #fff;
+  color: #444;
+  text-align: justify;
+  /* padding: 1rem; */
+  line-height: 2rem;
+  font-size: .9rem;
+  box-shadow: 0px 2px 5px #ddd;
+  border-radius: 5px 5px 1px 1px;
+  margin-bottom: 1rem;
+}
+.toggler-expand div {
+  padding: 1rem;
+  background-color: #fbfcfc;
+}
+.toggler-expand img {
+  border-radius: 5px;
+  width: 100%;
+  margin: 1rem 0;
+}
+/* .toggler-expand li {
+  display: inline-block;
+} */
+.toggler-expand a:hover {
+  color: #ff8500 !important;
+  /* cursor: pointer; */
+  text-decoration: underline !important;
+}
+.input-toggler:checked ~ .toggler-expand {
+  max-height: 120rem;
+  height: auto;
+}
+/* .input-toggler:checked ~ .label-toggler::before {
+  content: "-";
+} */
+.input-toggler:checked + .label-toggler .toggle-span:before{
+  transform: rotate(-50deg);
+}
+.input-toggler:checked + .label-toggler .toggle-span:after {
+  transform: rotate(50deg);
+}
+.articles-link:not(.collapsed) .toggle-span:after {
+  transform: rotate(50deg);
+}
+.articles-link:not(.collapsed) .toggle-span:before{
+  transform: rotate(-50deg);
+}
+.toggle-span {
+  display:block;
+  position:absolute;
+  top:8px;
+  left:0;
+  margin: 0;
+  width: 0;
+  height: 0;
+  background: #168acc;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.toggle-span::before {
+  content:'';
+  position:absolute;
+  left: 5px;
+  top: 3px;
+  width: 9px;
+  height: 1px;
+  background: inherit;
+  transition: inherit;
+  -webkit-transition: inherit;
+  transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+}
+.toggle-span::after {
+  content:'';
+  position:absolute;
+  width: 9px;
+  height: 1px;
+  left: 10px;
+  top: 3px;
+  background: inherit;
+  transition: inherit;
+  -webkit-transition: inherit;
+  transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  -moz-transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+}

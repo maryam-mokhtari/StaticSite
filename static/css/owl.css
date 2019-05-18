@@ -1,0 +1,57 @@
+.owl-carousel .owl-stage {
+  display: flex;
+  margin: 1px;
+}
+
+img.thumb--nest {
+  height: 50vw;
+}
+.owl-carousel--nested {
+  position: relative;
+  margin-bottom: -1rem;
+}
+.owl-carousel--nested .owl-nav {
+  position: absolute;
+  top: calc(50% - 3rem);
+  /* height: 3rem; */
+  margin: auto;
+  vertical-align: middle;
+}
+.owl-carousel--nested .owl-prev, .owl-carousel--nested .owl-next {
+  color: #fff !important;
+  background: transparent !important;
+  font-size: 3rem !important;
+  position: absolute;
+  /* margin: 0 .5rem !important; */
+}
+.owl-carousel--nested .owl-prev {
+  left: .5rem;
+}
+.owl-carousel--nested .owl-next {
+  left: calc(95vw - 70px);
+}
+.owl-carousel--nested .owl-dots {
+  position: relative;
+  top: -2rem;
+}
+.owl-dot span {
+  background-color: #555 !important;
+  opacity: .8;
+  margin: 4px !important;
+}
+.owl-dot.active span {
+  width: 13px !important;
+  height: 13px !important;
+  opacity: 1;
+  margin: 3px !important;
+}
+
+.owl-carousel--nested .owl-dot span {
+  background-color: #fff !important;
+  opacity: .6;
+}
+.owl-carousel--nested .owl-dot.active span {
+  width: 13px;
+  height: 13px;
+  opacity: 1;
+}

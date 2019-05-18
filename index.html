@@ -1,0 +1,1271 @@
+{% load cms_tags sekizai_tags %}
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% render_block "css" %}
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/page.css">
+    <link rel="stylesheet" href="static/css/collapse.css">
+    <link rel="stylesheet" href="static/css/sidenav.css">
+    <link rel="stylesheet" href="static/css/login.css">
+    <link rel="stylesheet" href="static/css/override.css">
+    <link rel="stylesheet" href="static/css/responsive-min.css">
+    <link rel="stylesheet" href="static/css/responsive-max.css">
+    <link rel="stylesheet" href="static/css/r-max.css">
+    <link rel="stylesheet" href="static/css/r-min.css">
+    <link rel="stylesheet" href="static/css/page-r-max.css">
+    <link rel="stylesheet" href="static/css/page-r-min.css">
+    <link rel="stylesheet" href="static/css/carousel.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link rel="icon" href="static/img/v2/favicon.ico" type="image/x-icon" />
+
+    <title>BaManRo - با من رو</title>
+  </head>
+  <body>
+    {% cms_toolbar %}
+    <div class="modal" tabindex="-1" role="dialog" id="searchModal">
+      <div class="modal-dialog modal-dialog-full" role="document">
+        <div class="modal-content search-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Search</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="static/img/magnifying-glass-browser.svg" class="search-modal-btn" alt="جستجو" title="جستجو" />
+            <input type="email" class="form-control search-input"
+              placeholder="موضوع مورد نظر را جستجو کنید..." >
+            <div class="search-categories">
+              <div>CATEGORIES</div>
+              <span>Analytics&nbsp;(41)</span>
+              <span>Customer&nbsp;Experience&nbsp;(61)</span>
+              <span>Customer&nbsp;Support&nbsp;(35)</span>
+              <span>Design&nbsp;(21)</span>
+              <span>Engagement&nbsp;Signals&nbsp;(10)</span>
+              <span>Engineers&nbsp;(23)</span>
+              <span>Frustration&nbsp;Metrics&nbsp;(17)</span>
+              <span>FullStory&nbsp;Culture&nbsp;(32)</span>
+              <span>FullStory&nbsp;Customer&nbsp;Use&nbsp;Cases&nbsp;(27)</span>
+              <span>Integrations&nbsp;(16)</span>
+              <span>Marketing&nbsp;(19)</span>
+              <span>Mobile&nbsp;(4)</span>
+              <span>Popular&nbsp;(19)</span>
+              <span>Proactive&nbsp;Support&nbsp;(6)</span>
+              <span>Product&nbsp;Development&nbsp;(16)</span>
+              <span>Product&nbsp;Features&nbsp;(38)</span>
+              <span>Product&nbsp;Management&nbsp;(13)</span>
+              <span>Research&nbsp;(6)</span>
+              <span>SaaS&nbsp;(2)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sidenav" class="sidenav">
+      <div id="sidenav-top" class="row">
+        <div class="col">
+          <span class="close-sidenav" id="sidenav-close">&times;</span>
+          <img id="search-open" class="search-sidenav" src="static/img/magnifying-glass-browser.svg" alt="جستجو" title="جستجو" />
+        </div>
+        <div class="col">
+          <button id="register-sidenav-button" class="btn login-sidenav-button">ثبت‌نام</button>
+          <button id="login-sidenav-button" class="btn login-sidenav-button">ورود</button>
+        </div>
+      </div>
+      <nav class="navbar migration-navbar navbar-expand-lg navbar-light">
+        <ul id="main-navbar" class="navbar-nav migration-navbar-nav">
+          <li class="nav-item migration-nav-item dropdown position-static visa">
+              <a class="nav-link migration-nav-link collapsed" role="button" data-toggle="collapse" data-target="#visa-menu" aria-expanded="false">
+              خدمات ویزا
+              <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+            </a>
+            <hr class="hr-menu" />
+            <div class="m migration-dropdown-menu sec collapse" id="visa-menu">
+              <div class="row w-100">
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" href="/page">
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای کانادا</a>
+                    <hr class="hr-menu" />
+                </div>
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" >
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای انگلیس
+                  </a>
+                  <hr class="hr-menu" />
+                </div>
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" >
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای شنگن
+                  </a>
+                  <hr class="hr-menu" />
+                </div>
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" >
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای آمریکا
+                  </a>
+                  <hr class="hr-menu" />
+                </div>
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" >
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای استرالیا
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item migration-nav-item dropdown position-static">
+            <a class="nav-link migration-nav-link collapsed" role="button" data-toggle="collapse" data-target="#embassy-menu" aria-expanded="false">
+              وقت سفارت
+              <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+            </a>
+            <div class="m migration-dropdown-menu sec collapse" id="embassy-menu">
+              <div class="row w-100">
+                <div class="col-lg">
+                  <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                    <img src="static/img/Arrow-left.svg" />
+                    کانادا
+                  </a>
+                </div>
+                <div class="col-lg">
+                  <hr class="hr-menu" />
+                  <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                    <img src="static/img/Arrow-left.svg" />
+                    انگلیس
+                  </a>
+                </div>
+                <div class="col-lg">
+                  <hr class="hr-menu" />
+                  <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                    <img src="static/img/Arrow-left.svg" />
+                    اروپا
+                  </a>
+                </div>
+                <div class="col-lg">
+                  <hr class="hr-menu" />
+                  <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                    <img src="static/img/Arrow-left.svg" />
+                    آمریکا
+                  </a>
+                </div>
+                <div class="col-lg">
+                  <hr class="hr-menu" />
+                  <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                    <img src="static/img/Arrow-left.svg" />
+                    استرالیا
+                  </a>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-menu" />
+          </li>
+          <li class="nav-item migration-nav-item dropdown position-static">
+            <a class="nav-link migration-nav-link collapsed" role="button" data-toggle="collapse" data-target="#services-menu" aria-expanded="false">
+              خدمات در کانادا
+              <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+            </a>
+            <div class="m migration-dropdown-menu sec collapse" id="services-menu">
+              <div class="row w-100">
+                <div class="col-lg">
+                  <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                    <img src="static/img/Arrow-left.svg" />
+                    خدمات پس از ورود به کانادا
+                  </a>
+                </div>
+                <div class="col-lg">
+                  <hr class="hr-menu" />
+                  <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                    <img src="static/img/Arrow-left.svg" />
+                    اجاره آپارتمان در کانادا
+                  </a>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-menu" />
+          </li>
+          <li class="nav-item migration-nav-item dropdown position-static">
+            <a class="nav-link migration-nav-link collapsed" role="button" data-toggle="collapse" data-target="#forms-menu" aria-expanded="false">
+              فرم‌ها و مدارک
+              <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+            </a>
+            <div class="m migration-dropdown-menu sec collapse" id="forms-menu">
+              <div class="row w-100">
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک کانادا</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک آمریکا</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک شنگن</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک انگلیس</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک استرالیا</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">فرم­ وکالتنامه پیکاپ ویزا</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">فرم ارزیابی</a>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-menu" />
+          </li>
+          <li class="nav-item migration-nav-item dropdown position-static">
+            <a class="nav-link migration-nav-link collapsed" role="button" data-toggle="collapse" data-target="#pay-menu" aria-expanded="false">
+              پرداخت آنلاین ارزی
+              <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+            </a>
+            <div class="m migration-dropdown-menu sec collapse" id="pay-menu">
+              <div class="row w-100">
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item">پرداخت هزینه سفارت کانادا</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">پرداخت وقت سفارت آمریکا</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">پرداخت ویزای استرالیا</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">پرداخت هتل و آپارتمان</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">راهنمای پرداخت آنلاین</a>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-menu" />
+          </li>
+          <li class="nav-item migration-nav-item dropdown position-static">
+            <a class="nav-link migration-nav-link collapsed" role="button" data-toggle="collapse" data-target="#blog-menu" aria-expanded="false">
+              مجله بامن‌رو
+              <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+            </a>
+            <div class="m migration-dropdown-menu sec collapse" id="blog-menu">
+              <div class="row w-100">
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item">اخبار و رویدادها</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">گردشگری</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">مهاجرت</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">آموزش</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">تور مجازی</a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">ویدیو</a>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-menu" />
+          </li>
+          <li class="nav-item migration-nav-item">
+              <a class="nav-link migration-nav-link" style="border: none"  id="menu-item-9" >
+                تماس با ما
+              </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="search-nav" class="sidenav">
+      <fieldset class="search-group">
+        <input class="form-control" placeholder="موضوع خود را جستجو کنید ..." />
+        <span class="close-sidenav" id="search-close">&times;</span>
+        <div class="search-category row">
+          <div class="col-6">
+            <mark>12</mark>  آیتم اول
+          </div>
+          <div class="col-6">
+            <mark>5</mark>  آیتم اول
+          </div>
+          <div class="col-6">
+            <mark>2</mark>  آیتم اول
+          </div>
+          <div class="col-6">
+            <mark>14</mark>  آیتم اول
+          </div>
+          <div class="col-6">
+            <mark>7</mark>  آیتم اول
+          </div>
+          <div class="col-6">
+            <mark>6</mark>  آیتم اول
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Main -->
+    <div id="top-slide">
+      <nav id="header-nav" class="navbar migration-navbar navbar-expand-lg navbar-light fixed-top sec-x">
+        <a class="navbar-brand migration-navbar-brand" >
+          <object id="top-logo" type="image/svg+xml" data="static/img/Logo-BaManRo.svg" class="top-logo"
+          alt="BaManRo Logo" title="با من رو">
+          </object>
+        </a>
+        <div id="sidenav-leftbox">
+          <a href="tel:02122419722"><img src="static/img/v2/phone-call.svg" class="top-icon" id="phone" alt="تماس" title="تماس" /></a>
+          <button id="dropdownMenuButton3" class="btn dropdown-toggle migration-dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img src="static/img/user1.svg" class="top-icon" id="user" alt="ثبت‌نام" title="ثبت‌نام" />
+          </button>
+          <button type="button" class="navbar-toggler" id="sidenav-open">
+            <img src="static/img/Hamberger-Menu.svg" class="top-icon-menu" alt="بامن‌رو" title="بامن‌رو" />
+          </button>
+          <div id="mobile-login-box" class="dropdown-menu login-box" aria-labelledby="dropdownMenuButton3">
+            <div class="w-300">
+              <div class="login-top-arrow"></div>
+              <div class="d-flex">
+                <button class="btn login-tab-button active">ورود</button>
+                <button class="btn register-tab-button">ثبت&zwnj;نام</button>
+              </div>
+              <div class="form-group login-tab" style="display: block;">
+                <fieldset class="form-group">
+                  <img src="static/img/002/avatar.svg" class="placeholder-icon">
+                  <input type="email" class="form-control login-input">
+                  <label class="login-label" for="email-login">
+                    Email
+                  </label>
+                </fieldset>
+                <fieldset class="form-group">
+                  <img src="static/img/002/padlock.svg" class="placeholder-icon">
+                  <img src="static/img/002/eye.svg" class="eye eye-open" style="display: none">
+                  <img src="static/img/002/hide.svg" class="eye eye-close">
+                  <input type="password" id="scrolled-password-login" class="form-control login-input password-login">
+                  <label class="login-label" for="scrolled-password-login">
+                    Password
+                  </label>
+                </fieldset>
+                <button class="form-control btn login-button">
+                  ورود
+                </button>
+
+                <div class="row login-bottom-item">
+                  <div class="col">
+                    <input type="checkbox" style="position: relative; top: 4px;">
+                    مرا به خاطر بسپار
+                  </div>
+                  <div class="col text-left">
+                    <a>
+                    بازیابی رمز عبور
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group register-tab" style="display: none;">
+                <fieldset class="form-group">
+                  <img src="static/img/002/avatar.svg" class="placeholder-icon">
+                  <input type="email" class="form-control login-input">
+                  <label class="login-label" for="email-register">
+                    Email or Phone
+                  </label>
+                </fieldset>
+                <button class="form-control btn register-button">
+                  ثبت&zwnj;نام
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse migration-navbar-collapse" id="navbar-supported-content">
+          <!-- Header row -->
+          <div id="top-div" class="row w-100 d-none d-lg-flex">
+            <div class="col-md-4 offset-md-1 pr-0">
+              <div class="dropdown show z-10">
+                <button class="btn dropdown-toggle migration-dropdown-toggle pr-0" type="button"
+                  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  ورود / ثبت‌نام
+                  <img src="static/img/Arrow-bottom.svg" class="nav-item-image arrow-login" />
+                </button>
+                <div class="dropdown-menu dropdown-menu2 login-box" aria-labelledby="dropdownMenuButton">
+                  <div class="w-300">
+                    <div class="login-top-arrow"></div>
+                    <div class="d-flex">
+                      <button class="btn login-tab-button active">ورود</button>
+                      <button class="btn register-tab-button">ثبت‌نام</button>
+                    </div>
+                    <div class="form-group login-tab">
+                      <fieldset class="form-group">
+                        <img src="static/img/002/avatar.svg" class="placeholder-icon" />
+                        <input type="email" class="form-control login-input">
+                        <label class="login-label" for="email-login">
+                          Email
+                        </label>
+                      </fieldset>
+                      <fieldset class="form-group">
+                        <img src="static/img/002/padlock.svg" class="placeholder-icon" />
+                        <img src="static/img/002/eye.svg" class="eye eye-open" style="display: none" />
+                        <img src="static/img/002/hide.svg" class="eye eye-close" />
+                        <input type="password" class="form-control login-input">
+                        <label class="login-label" for="password-login">
+                          Password
+                        </label>
+                      </fieldset>
+                      <button class="form-control btn login-button">
+                        ورود
+                      </button>
+
+                      <div class="row login-bottom-item">
+                        <div class="col">
+                          <input type="checkbox" style="position: relative; top: 4px;" />
+                          مرا به خاطر بسپار
+                        </div>
+                        <div class="col text-left">
+                          <a>
+                          بازیابی رمز عبور
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group register-tab">
+                      <fieldset class="form-group">
+                        <img src="static/img/002/avatar.svg" class="placeholder-icon" />
+                        <input type="email" class="form-control login-input">
+                        <label class="login-label" for="email-register">
+                          Email or Phone
+                        </label>
+                      </fieldset>
+                      <button class="form-control btn register-button">
+                        ثبت‌نام
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="/search">
+                <button class="search-button" data-toggle="modal" data-target="#searchModal">
+                  <img src="static/img/magnifying-glass-browser.svg" alt="جستجو" title="جستجو" />
+                </button>
+              </a>
+            </div>
+            <div class="col-md-7 tel">
+                    <img id="headphone" src="static/img/headphones.svg" alt="تماس" title="تماس" />
+                    021-22419722
+
+                      <div class="or">
+                        |
+                      </div>
+                      <div class="language-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="static/img/Arrow-bottom.svg" id="arrowFlag"
+                        class="nav-item-image">
+                        <img class="flag" src="static/img/flag-en.png" alt="تغییر زبان" title="تغییر زبان" />
+                        <div class="dropdown-menu language-menu" aria-labelledby="arrowFlag">
+                          <img class="flag" src="static/img/flag-en.png" alt="انگلیسی" title="انگلیسی" />
+                          <hr class="flag-hr"/>
+                          <img class="flag" src="static/img/flag-fa.png" alt="فارسی" title="فارسی" />
+                        </div>
+                      </div>
+                  </div>
+          </div>
+          <!-- End Header row -->
+          <hr id="top-hr" class="hr-top" />
+          <ul class="navbar-nav migration-navbar-nav">
+            <li class="nav-item migration-nav-item dropdown position-static visa">
+              <a class="nav-link migration-nav-link dropdown-toggle" id="menu-item-0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                خدمات ویزا
+                <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+              </a>
+              <div class="dropdown-menu m migration-dropdown-menu sec" aria-labelledby="navbarDropdown">
+                <div class="d-flex w-100">
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link"  href="/page">
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای کانادا</a>
+                    <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">‫ویزای توریستی
+                  </a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای تجاری</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای دانش آموزی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای دانشجویی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای فرصت مطالعاتی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای موقت</a>
+                  <a class="dropdown-item migration-dropdown-item">پیکاپ ویزای کانادا</a>
+                </div>
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" >
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای انگلیس
+                  </a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">ویزای توریستی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای تجاری</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای تحصیلی</a>
+                  <a class="dropdown-item migration-dropdown-item">اخذ اقامت دائم</a>
+                  <a class="dropdown-item migration-dropdown-item">پیکاپ ویزای انگلیس</a>
+                </div>
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" >
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای شنگن
+                  </a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">ویزای شنگن</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای فرانسه</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای ایتالیا</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای هلند</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای اسپانیا</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای یونان</a>
+                  <a class="dropdown-item migration-dropdown-item">اخذ اقامت دائم</a>
+                </div>
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" >
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای آمریکا
+                  </a>
+                  <hr class="hr-menu" />
+                  <a class="dropdown-item migration-dropdown-item">ویزای توریستی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای تجاری</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای دانشجویی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای نامزدی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای ازدواج</a>
+                  <a class="dropdown-item migration-dropdown-item">اخذ اقامت دائم</a>
+                  <a class="dropdown-item migration-dropdown-item">پیکاپ ویزای آمریکا</a>
+                </div>
+                <div class="col-lg">
+                  <a class="dropdown-item migration-dropdown-item header-link migration-header-link" >
+                    <img src="static/img/Arrow-left.svg" />
+                    ویزای استرالیا
+                  </a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای توریستی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای تجاری</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای دانشجویی</a>
+                  <a class="dropdown-item migration-dropdown-item">ویزای ازدواج</a>
+                  <a class="dropdown-item migration-dropdown-item">اخذ اقامت دائم</a>
+                </div>
+              </div>
+              </div>
+            </li>
+            <li class="nav-item migration-nav-item dropdown position-static">
+              <a class="nav-link migration-nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                وقت سفارت
+                <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+              </a>
+              <div class="dropdown-menu m migration-dropdown-menu sec" aria-labelledby="navbarDropdown">
+                <div class="d-flex w-100">
+                  <div class="col-lg">
+                    <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      کانادا
+                    </a>
+                  </div>
+                  <div class="col-lg">
+                    <hr class="hr-menu" />
+                    <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      انگلیس
+                    </a>
+                  </div>
+                  <div class="col-lg">
+                    <hr class="hr-menu" />
+                    <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      اروپا
+                    </a>
+                  </div>
+                  <div class="col-lg">
+                    <hr class="hr-menu" />
+                    <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      آمریکا
+                    </a>
+                  </div>
+                  <div class="col-lg">
+                    <hr class="hr-menu" />
+                    <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      استرالیا
+                    </a>
+                  </div>
+                </div>
+            </li>
+            <li class="nav-item migration-nav-item dropdown position-static">
+              <a class="nav-link migration-nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                خدمات در کانادا
+                <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+              </a>
+              <div class="dropdown-menu m migration-dropdown-menu sec" aria-labelledby="navbarDropdown">
+                <div class="d-flex w-100">
+                  <div class="col-lg">
+                    <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      خدمات پس از ورود به کانادا
+                    </a>
+                  </div>
+                  <div class="col-lg">
+                    <hr class="hr-menu" />
+                    <a class="header-link migration-header-link dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      اجاره آپارتمان در کانادا
+                    </a>
+                  </div>
+                </div>
+            </li>
+            <li class="nav-item migration-nav-item dropdown position-static">
+              <a class="nav-link migration-nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                فرم‌ها و مدارک
+                <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+              </a>
+              <div class="dropdown-menu m migration-dropdown-menu sec" aria-labelledby="navbarDropdown">
+                <div class="d-flex w-100">
+                  <div class="col-lg">
+                    <a class="header-link header-link2 dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      فرم‌ها و مدارک
+                    </a>
+                    <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک کانادا</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک آمریکا</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک شنگن</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک انگلیس</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">فرم‌ها و مدارک استرالیا</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">فرم­ وکالتنامه پیکاپ ویزا</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">فرم ارزیابی</a>
+                  </div>
+                </div>
+            </li>
+
+            <li class="nav-item migration-nav-item dropdown position-static">
+              <a class="nav-link migration-nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                پرداخت آنلاین ارزی
+                <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+              </a>
+              <div class="dropdown-menu m migration-dropdown-menu sec" aria-labelledby="navbarDropdown">
+                <div class="d-flex w-100">
+                  <div class="col-lg">
+                    <a class="header-link header-link2 dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      پرداخت آنلاین ارزی
+                    </a>
+                    <a class="dropdown-item migration-dropdown-item">پرداخت هزینه سفارت کانادا</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">پرداخت وقت سفارت آمریکا</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">پرداخت ویزای استرالیا</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">پرداخت هتل و آپارتمان</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">راهنمای پرداخت آنلاین</a>
+                  </div>
+                </div>
+            </li>
+
+
+            <li class="nav-item migration-nav-item dropdown position-static">
+              <a class="nav-link migration-nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                مجله بامن‌رو
+                <img src="static/img/Arrow-bottom.svg" class="nav-item-image" />
+              </a>
+              <div class="dropdown-menu m migration-dropdown-menu sec" aria-labelledby="navbarDropdown">
+                <div class="d-flex w-100">
+                  <div class="col-lg">
+                    <a class="header-link header-link2 dropdown-item migration-dropdown-item " >
+                      <img src="static/img/Arrow-left.svg" />
+                      مجله بامن‌رو
+                    </a>
+                    <a class="dropdown-item migration-dropdown-item">اخبار و رویدادها</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">گردشگری</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">مهاجرت</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">آموزش</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">تور مجازی</a>
+                    <hr class="hr-menu" />
+                    <a class="dropdown-item migration-dropdown-item">ویدیو</a>
+                  </div>
+                </div>
+            </li>
+
+            <li class="nav-item migration-nav-item">
+              <a class="nav-link migration-nav-link" style="border: none"  id="menu-item-9" >
+                تماس با ما
+              </a>
+            </li>
+          </ul>
+          <div id="scrolled-login" class="dropdown" style="display: none">
+            <button id="dropdownMenuButton2" class="btn dropdown-toggle migration-dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <img src="static/img/user1.svg" class="top-icon-scrolled d-none" id="user2" alt="ثبت‌نام" title="ثبت‌نام" />
+            </button>
+            <a href="tel:02122419722"><img src="static/img/v2/phone-call.svg" class="top-icon-scrolled d-none"></a>
+            <div id="scrolled-login-box" class="dropdown-menu login-box" aria-labelledby="dropdownMenuButton2">
+              <div class="w-300">
+                <div class="login-top-arrow"></div>
+                <div class="d-flex">
+                  <button class="btn login-tab-button active">ورود</button>
+                  <button class="btn register-tab-button">ثبت‌نام</button>
+                </div>
+                <div class="form-group login-tab">
+                  <fieldset class="form-group">
+                    <img src="static/img/002/avatar.svg" class="placeholder-icon" />
+                    <input type="email" class="form-control login-input">
+                    <label class="login-label" for="email-login">
+                      Email
+                    </label>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <img src="static/img/002/padlock.svg" class="placeholder-icon" />
+                    <img src="static/img/002/eye.svg" class="eye eye-open" style="display: none" />
+                    <img src="static/img/002/hide.svg" class="eye eye-close" />
+                    <input type="password" class="form-control login-input">
+                    <label class="login-label" for="password-login">
+                      Password
+                    </label>
+                  </fieldset>
+                  <button class="form-control btn login-button">
+                    ورود
+                  </button>
+
+                  <div class="row login-bottom-item">
+                    <div class="col">
+                      <input type="checkbox" style="position: relative; top: 4px;" />
+                      مرا به خاطر بسپار
+                    </div>
+                    <div class="col text-left">
+                      <a>
+                      بازیابی رمز عبور
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group register-tab">
+                  <fieldset class="form-group">
+                    <img src="static/img/002/avatar.svg" class="placeholder-icon" />
+                    <input type="email" class="form-control login-input">
+                    <label class="login-label" for="email-register">
+                      Email or Phone
+                    </label>
+                  </fieldset>
+                  <button class="form-control btn register-button">
+                    ثبت‌نام
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+
+      <div id="mobile-head-pic"></div>
+      <div id="first-page" class="sec-x">
+        <section id="search-house-container">
+          <section id="search-house">
+            <h1>جستجوی آپارتمان در کانادا</h1>
+            <fieldset class="form-group">
+              <label for="location-text">
+                شهر یا منطقه یا کشور
+              </label>
+              <input id="location-text" value="کانادا، ونکور" class="form-control">
+            </fieldset>
+            <div id="date-box">
+              <fieldset class="form-group">
+                <label for="from-date">
+                  از تاریخ
+                </label>
+                <input id="from-date" value="۱۲ دی ماه ۱۳۹۸" class="form-control">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="to-date">
+                  تا تاریخ
+                </label>
+                <input id="to-date" value="۲۶ دی ماه ۱۳۹۸" class="form-control">
+              </fieldset>
+            </div>
+            <fieldset class="form-group">
+              <label for="from-date">
+                تعداد مسافران
+              </label>
+              <input value="۳ بزرگسال، ۱ کودک، ۰ نوزاد" class="form-control">
+            </fieldset>
+            <a href="/search">
+              <button class="btn location-button">
+                جستجو
+              </button>
+            </a>
+          </section>
+        </section>
+      </div>
+    </div>
+    <section id="explorer1" class="sec sec1-carousel">
+      <h1 class="section-title">خدمات در کانادا</h1>
+      <div id="explorer" class="owl-carousel">
+        <div class="explorer">
+          <div id ="item-pic1" class="item-pic"></div>
+          <h1 class="">
+            آپارتمان
+          </h1>
+        </div>
+        <div class="explorer">
+          <div id ="item-pic2" class="item-pic"></div>
+          <h1 class="">
+            رستوران گردی
+          </h1>
+        </div>
+        <div class="explorer">
+          <div id ="item-pic3" class="item-pic"></div>
+          <h1 class="">
+            خانه ویلایی
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="sec-x">
+      <div id="ad1" class="ad">
+        <div class="inner-ad">
+          <h1>یک شب رویایی در لوور</h1>
+          <div>
+            یک شب رویایی را در لوور برنده شوید
+          </div>
+          <button class="btn">بیشتر بدانید</button>
+        </div>
+      </div>
+    </section>
+    <section id="canada" class="sec sec-carousel canada-row">
+      <h1 class="section-title">خدمات در کانادا</h1>
+      <div id="canada-box" class="owl-carousel">
+        <div class="canada-box-div">
+          <img src="static/img/v2/visa.svg" />
+          خدمات پس از ورود
+          <br class="mobile-br" />
+          به کانادا
+        </div>
+        <div class="canada-box-div">
+          <img src="static/img/v2/passport.svg" />
+          ویزای تجاری
+          <br class="mobile-br" />
+          کانادا
+        </div>
+        <div class="canada-box-div">
+          <img src="static/img/v2/government-buildings.svg" />
+          وقت سفارت
+          <br class="mobile-br" />
+          کانادا
+        </div>
+        <div class="canada-box-div">
+          <img src="static/img/v2/suitcase.svg" />
+          ویزای توریستی
+          <br class="mobile-br" />
+          کانادا
+        </div>
+        <div class="canada-box-div">
+          <img src="static/img/v2/maternity.svg" />
+          تولد فرزند
+          <br class="mobile-br" />
+          در کانادا
+        </div>
+      </div>
+    </section>
+    <section class="sec canada-row">
+      <div id="ad2" class="ad">
+        <div class="inner-ad">
+          <h1>یک شب رویایی در لوور</h1>
+          <div>
+            یک شب رویایی را در لوور برنده شوید
+          </div>
+          <button class="btn">بیشتر بدانید</button>
+        </div>
+      </div>
+    </section>
+    <section id="apartments">
+      <h1 class="section-title sec-x">
+        پیشنهادهای ویژه آپارتمان در کانادا
+      </h1>
+      <div id="carousel-house-box" class="sec-x sec-carousel">
+        <div id="carousel-house" class="owl-carousel">
+          <div id="apartment1-1" class="apartment">
+            <div class="apartment-shadow">
+              <h2>آپارتمان ونکوور</h2>
+              <div>
+                اجاره هر شب /
+                <span class="ltr">$&nbsp;۷۶</span>
+              </div>
+            </div>
+          </div>
+          <div id="apartment1-2" class="apartment">
+            <div class="apartment-shadow">
+              <h2>آپارتمان تورنتو</h2>
+              <div>
+                اجاره هر شب /
+                <span class="ltr">$&nbsp;۷۶</span>
+              </div>
+            </div>
+          </div>
+          <div id="apartment1-3" class="apartment">
+            <div class="apartment-shadow">
+              <h2>آپارتمان ونکور</h2>
+              <div>
+                اجاره هر شب / $&nbsp;۷۶
+              </div>
+            </div>
+          </div>
+          <div id="apartment1-4" class="apartment">
+            <div class="apartment-shadow">
+              <h2>آپارتمان مونترال</h2>
+              <div>
+                اجاره هر شب / $&nbsp;۷۶
+              </div>
+            </div>
+          </div>
+          <div id="apartment1-5" class="apartment">
+            <div class="apartment-shadow">
+              <h2>آپارتمان مونترآل</h2>
+              <div>
+                اجاره هر شب / $&nbsp;۷۶
+              </div>
+            </div>
+          </div>
+          <div id="apartment1-6" class="apartment">
+            <div class="apartment-shadow">
+              <h2>آپارتمان مونترآل</h2>
+              <div>
+                اجاره هر شب / $&nbsp;۷۶
+              </div>
+            </div>
+          </div>
+          <div id="apartment1-7" class="apartment">
+            <div class="apartment-shadow">
+              <h2>آپارتمان مونترآل</h2>
+              <div>
+                اجاره هر شب / $&nbsp;۷۶
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="houses-half-circle-div">
+        <div id="houses-half-circle">
+        </div>
+      </div>
+    </section>
+    <div id="visa-customers">
+      <section id="customers" class="w-100">
+        <div id="shapes1" class="sec">
+          <div id="triangle1" class="shape triangle">
+            <div id="triangle2" class="shape triangle"></div>
+          </div>
+          <div id="circle1" class="shape circle"></div>
+          <div id="circle2" class="shape circle"></div>
+        </div>
+        <div class="row w-100 zero">
+          <div class="col-md-12 page-title">
+            نظرات مشتریان بامن‌رو
+            <hr class="hr" />
+          </div>
+        </div>
+        <div class="sec sec-carousel">
+          <div id="carousel-customer" class="owl-carousel owl-theme">
+            <div class="box-customer">
+              <div class="customer-text">
+                چه کسی گفته است، سفر مانند یک فنجان چای برای همه دلپذیر نیست؟ عشق به سفر در وجود همه ما وجود دارد. اما برخی از مردم آن را کشف کرده و پرورش می دهند و برخی نیز تسلیم محدودیت ها و شرایط جامعه شده و این احساس را در خود نابود می‌کنند. در اینجا نقل قول هایی برای کسانی که حس علاقه به سفر را در وجود خود سرکوب کرده اند، ارائه می شود. نقل قول هایی که می تواند به شما در زمینه کسب انگیزه دوباره برای سفر و درک احساس واقعی آن کمک کند.
+              </div>
+              <div class="row box-customer2">
+                <div class="col-3">
+                  <img src="static/img/profile.jpg" class="avatar" />
+                </div>
+                <div class="col-9">
+
+                  مشتری ۱
+                  <br/>
+                   لورم ایپسوم متن ساختگی با تولید
+                </div>
+              </div>
+            </div>
+            <div class="box-customer">
+              <div class="customer-text">
+
+                چه کسی گفته است، سفر مانند یک فنجان چای برای همه دلپذیر نیست؟ عشق به سفر در وجود همه ما وجود دارد. اما برخی از مردم آن را کشف کرده و پرورش می دهند و برخی نیز تسلیم محدودیت ها و شرایط جامعه شده و این احساس را در خود نابود می‌کنند. در اینجا نقل قول هایی برای کسانی که حس علاقه به سفر را در وجود خود سرکوب کرده اند، ارائه می شود. نقل قول هایی که می تواند به شما در زمینه کسب انگیزه دوباره برای سفر و درک احساس واقعی آن کمک کند.
+              </div>
+              <div class="row box-customer2">
+                <div class="col-3">
+                  <img src="static/img/profile.jpg" class="avatar" />
+                </div>
+                <div class="col-9">
+
+                  مشتری ۲
+                  <br/>
+                   لورم ایپسوم متن ساختگی با تولید
+                </div>
+              </div>
+            </div>
+            <div class="box-customer">
+              <div class="customer-text">
+                چه کسی گفته است، سفر مانند یک فنجان چای برای همه دلپذیر نیست؟ عشق به سفر در وجود همه ما وجود دارد. اما برخی از مردم آن را کشف کرده و پرورش می دهند و برخی نیز تسلیم محدودیت ها و شرایط جامعه شده و این احساس را در خود نابود می‌کنند. در اینجا نقل قول هایی برای کسانی که حس علاقه به سفر را در وجود خود سرکوب کرده اند، ارائه می شود. نقل قول هایی که می تواند به شما در زمینه کسب انگیزه دوباره برای سفر و درک احساس واقعی آن کمک کند.
+              </div>
+              <div class="row box-customer2">
+                <div class="col-3">
+                  <img src="static/img/profile.jpg" class="avatar" />
+                </div>
+                <div class="col-9">
+
+                  مشتری ۳
+                  <br/>
+                   لورم ایپسوم متن ساختگی با تولید
+                </div>
+              </div>
+            </div>
+            <div class="box-customer">
+              <div class="customer-text">
+                چه کسی گفته است، سفر مانند یک فنجان چای برای همه دلپذیر نیست؟ عشق به سفر در وجود همه ما وجود دارد. اما برخی از مردم آن را کشف کرده و پرورش می دهند و برخی نیز تسلیم محدودیت ها و شرایط جامعه شده و این احساس را در خود نابود می‌کنند. در اینجا نقل قول هایی برای کسانی که حس علاقه به سفر را در وجود خود سرکوب کرده اند، ارائه می شود. نقل قول هایی که می تواند به شما در زمینه کسب انگیزه دوباره برای سفر و درک احساس واقعی آن کمک کند.
+              </div>
+              <div class="row box-customer2">
+                <div class="col-3">
+                  <img src="static/img/profile.jpg" class="avatar" />
+                </div>
+                <div class="col-9">
+
+                  مشتری ۴
+                  <br/>
+                   لورم ایپسوم متن ساختگی با تولید
+                </div>
+              </div>
+            </div>
+            <div class="box-customer">
+              <div class="customer-text">
+                چه کسی گفته است، سفر مانند یک فنجان چای برای همه دلپذیر نیست؟ عشق به سفر در وجود همه ما وجود دارد. اما برخی از مردم آن را کشف کرده و پرورش می دهند و برخی نیز تسلیم محدودیت ها و شرایط جامعه شده و این احساس را در خود نابود می‌کنند. در اینجا نقل قول هایی برای کسانی که حس علاقه به سفر را در وجود خود سرکوب کرده اند، ارائه می شود. نقل قول هایی که می تواند به شما در زمینه کسب انگیزه دوباره برای سفر و درک احساس واقعی آن کمک کند.
+              </div>
+              <div class="row box-customer2">
+                <div class="col-3">
+                  <img src="static/img/profile.jpg" class="avatar" />
+                </div>
+                <div class="col-9">
+
+                  مشتری ۵
+                  <br/>
+                   لورم ایپسوم متن ساختگی با تولید
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="shapes2" class="sec">
+          <div id="rectangle1" class="shape"></div>
+          <div id="circle3" class="shape circle"></div>
+        </div>
+      </section>
+      <div class="visa-customer"></div>
+      <div class="sec">
+        <section id="visa">
+          <h1>
+            از بامن‌رو
+            <br/>
+             ویزای کانادا هدیه بگیرید!
+          </h1>
+          <form id="visa-form">
+            <div>
+              <input id="input1" placeholder="نام" />
+              <div class="seperator">|</div>
+              <input id="input2" placeholder="نام خانوادگی" />
+            </div>
+            <div>
+              <input id="input3" placeholder="ایمیل" />
+              <div class="seperator">|</div>
+              <input id="input4" placeholder="تلفن" />
+            </div>
+            <button class="btn visa-button w-100">ثبت کنید</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <!-- End Main -->
+
+    <section id="footer-section" class="row zero down-links w-100 sec-x">
+      <div class="col down-item">
+        <img src="static/img/v2/lawyer.svg" class="down-icon" />
+        <span class="footer-text">
+          تیم وکلای
+          <br class="footer-mobile" />
+             مهاجرتی
+        </span>
+      </div>
+      <div class="col down-item">
+        <img src="static/img/support.svg" class="down-icon" />
+        <span class="footer-text">
+          مشاوره
+          <br class="footer-mobile" />
+              رایگان
+        </span>
+      </div>
+      <div class="col down-item">
+        <img src="static/img/wallet.svg" class="down-icon" />
+        <span class="footer-text">
+          تضمین<br class="footer-mobile" />بهترین&nbsp;قیمت
+        </span>
+      </div>
+      <div class="col down-item">
+        <img src="static/img/headphones.svg" class="down-icon" />
+        <span class="footer-text">
+          پشتیبانی
+          <br class="footer-mobile" />
+          آنلاین
+        </span>
+      </div>
+    </section>
+    <footer id="immigration-footer" class="sec-x">
+      <div id="half-circle1-div">
+        <div id="half-circle1">
+        </div>
+      </div>
+      <div class="row zero bar">
+        <div class="bar-logo">
+          <img src="static/img/Logo-BaManRo.svg" />
+          <div class="address">
+          تهران، زعفرانیه، خیابان مقدس اردبیلی، نبش
+           خیابان
+            فرخ،
+             ساختمان فرخ،
+              طبقه ۷،
+               واحد ۷۰۲
+          </div>
+          <div class="downer-tel">
+            <a href="tel:02122419722">
+              <img class="downer-icon" src="static/img/v2/telephone.svg" alt="تماس" title="تماس" />
+              021-22419722
+            </a>
+          </div>
+          <div class="downer-email">
+            <a href="mailto:info@bamanro.com">
+              <img class="downer-icon email-icon d-none" src="static/img/mail.svg" alt="ایمیل" title="ایمیل" />
+              info@bamanro.com
+            </a>
+          </div>
+
+        </div>
+        <div class="row zero bar-links">
+          <div class="col-md-4 col-sm-4 downer-box">
+            <div class="downer-title">
+              بیشتر بدانید
+            </div>
+            <ul class="downer-ul">
+              <div class="row">
+                <div class="col-6 col-sm-12 pl-0">
+                  <li>درباره ما</li>
+                  <li>همکاری با ما</li>
+                  <li>باشگاه مشتریان</li>
+                </div>
+                <div class="col-6 col-sm-12 pl-0">
+                  <li>سوالات متداول</li>
+                  <li>قوانین و مقررات</li>
+                </div>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-4 downer-box">
+            <div class="downer-title">
+              وقت سفارت و ویزا
+            </div>
+            <ul class="downer-ul">
+              <div class="row">
+                <div class="col-6 col-sm-12 pl-0">
+                  <li>کانادا</li>
+                  <li>آمریکا</li>
+                  <li>انگلیس</li>
+                </div>
+                <div class="col-6 col-sm-12 pl-0">
+                  <li>استرالیا</li>
+                  <li>شنگن</li>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-4 downer-box">
+            <div class="downer-title">
+              خدمات ما
+            </div>
+            <ul class="downer-ul">
+              <div class="row">
+                <div class="col-6 col-sm-12 pl-0">
+                  <li>اجاره آپارتمان</li>
+                  <li>خدمات پس از ورود</li>
+                  <li>خدمات تور</li>
+                </div>
+                <div class="col-6 col-sm-12 pl-0">
+                  <li>فرم‌ها و مدارک</li>
+                  <li>پذیرش تحصیلی</li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="half-circle2-div">
+      <div id="half-circle2">
+      </div>
+    </div>
+    <footer id="footer2" class="sec-x">
+      <div class="row zero bar2">
+        <div class="col-sm-5 p-0 prizes">
+          <img src="static/img/nemad.png" class="footer-img" />
+          <img src="static/img/enemad.png" class="footer-img" />
+        </div>
+        <div class="col-lg-2 d-none d-lg-block">
+          <img src="static/img/prize1.png" class="footer-img" />
+          <img src="static/img/prize2.png" class="footer-img" />
+        </div>
+        <div class="col-lg-5 col-sm-7 p-0">
+          <img src="static/img/youtube.svg" class="footer-icon" style="margin-left: 0" />
+          <img src="static/img/vimeo.svg" class="footer-icon" />
+          <img src="static/img/linkedin.svg" class="footer-icon" />
+          <img src="static/img/twitter.svg" class="footer-icon" />
+          <img src="static/img/facebook.svg" class="footer-icon" />
+          <img src="static/img/instagram2.svg" class="footer-icon" />
+        </div>
+      </div>
+      <div class="row d-none">
+        <div class="col-12">
+          <span class="footer-link">
+            درباره ما
+          </span>
+          <span class="footer-link">
+            تماس با ما
+          </span>
+          <span class="footer-link">
+            حریم خصوصی
+          </span>
+          <span class="footer-link">
+            قوانین و مقررات
+          </span>
+          <span class="footer-link">
+            سوالات متدوال
+          </span>
+          <span class="footer-link">
+            راهنما
+          </span>
+        </div>
+      </div>
+
+
+      <div class="row zero">
+        <div class="col-sm-4 copyright d-sm-block d-none">
+          Copyright &copy; 2019 <a class="footer-url" href="http://bamanro.com">bamanro.com</a>
+        </div>
+        <div class="col-sm-8 copyright-fa">
+          تمامی حقوق این وبسایت برای شرکت با من رو محفوظ است.
+        </div>
+        <div class="col-12 copyright2 d-sm-none">
+          Copyright &copy; 2019 <a class="footer-url" href="http://bamanro.com">bamanro.com</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" type="text/javascript"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/base.js"></script>
+    <script src="static/js/sidenav.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+  </body>
+</html>
